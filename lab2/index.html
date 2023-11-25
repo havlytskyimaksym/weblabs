@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pizza Shop 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div>
+  <table border="1">
+    <tr>
+      <th colspan="2">Pizza Shop 2.0</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+    </tr>
+    <tr>
+      <td>Pizza Topping</td>
+      <td style="display: block;">
+        <input type="radio" name="topping" value="Supreme"> Supreme
+        <input type="radio" name="topping" value="Vegetarian"> Vegetarian
+        <input type="radio" name="topping" value="Hawaiian"> Hawaiian
+      </td>
+    </tr>
+    <tr>
+      <td>Pizza Sauce</td>
+      <td>
+        <select name="sauce" id="sauce">
+          <option value="Tomato">Tomato</option>
+          <option value="Pesto">Pesto</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Optional Extras</td>
+      <td>
+        <input type="checkbox" name="extras[]" value="Extra Cheese"> Extra Cheese
+        <input type="checkbox" name="extras[]" value="Gluten Free Base"> Gluten Free Base
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <label for="instructions" style="display: block;">Delivery Instructions:</label>
+        <textarea style="width: 98%;" name="instructions" placeholder="Write delivery instructions..." id="instructions"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Send my Order" id="submitOrder" /></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
